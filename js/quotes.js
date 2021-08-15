@@ -701,7 +701,7 @@ function getNewQuote() {
 
 
 	//For changing Twitter quote source
-	var baseTweet = "https://twitter.com/intent/tweet?url=http%3A%2F%2Fsonorangirl.github.io%2FEarth-Quotes%2F%23&text=";
+	var baseTweet = "https://twitter.com/intent/tweet?url=http%3A%2F%2Fishanbatish.github.io%2FEarth-Quotes%2F%23&text=";
 	var newText = "'" + quoteHTML + "' " + authorHTML;
 	var encoded = encodeURI(newText);
 	var customTweet = baseTweet + encoded;
@@ -714,9 +714,9 @@ function getNewQuote() {
 
 		$('body').css('background', 'url(img/' + imageHTML + ') no-repeat center center fixed');
 
-		$('meta[property="og:url"]').attr('content', 'http://sonorangirl.github.io/Earth-Quotes/#' + urlRefresh);
+		$('meta[property="og:url"]').attr('content', 'http://ishanbatish.github.io/Earth-Quotes/#' + urlRefresh);
 		$('meta[property="og:description"]').attr('content', 'Location: ' + locationHTML);
-		$('meta[property="og:image"]').attr('content', 'http://sonorangirl.github.io/Earth-Quotes/img/' + imageHTML + picRefresh);
+		$('meta[property="og:image"]').attr('content', 'http://ishanbatish.github.io/Earth-Quotes/img/' + imageHTML + picRefresh);
 
 		
 		$('.tweet > a').attr('href', customTweet);
